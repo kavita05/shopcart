@@ -1,0 +1,66 @@
+.bg-primary{
+    background: linear-gradient(to left, rgb(67, 198, 172), rgb(25, 22, 84));
+}
+.cart-page{
+    margin: 80px auto;
+    padding: 3rem;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+text-align: left;
+padding: 15px;
+color: #fff;  
+background:rgb(1, 143, 138);
+font-weight: normal;  
+}
+td{
+    width: 20%;
+    padding:10px 5px;
+}
+.cart-info{
+    display: flex;
+     flex-wrap: wrap;
+    } 
+td a{
+    color: rgb(33, 136, 115);
+    font-size: 16px;
+}
+.total-price{
+display: flex;
+justify-content: flex-end;
+}
+.total-price table{
+    border-top:3px solid rgb(25, 22, 84);
+    width: 50%;
+    max-width: 400px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+.box .button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+.box .button:active{
+    background: #ccc;
+
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}

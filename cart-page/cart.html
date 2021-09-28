@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="cart.css">
+    
+</head>
+<body>
+    <!-- Start navbar -->
+    <nav class="bg-primary">
+        <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">B2B Commerce</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="badges.html"><i class="material-icons left">assignment_ind</i>About</a></li>
+            <li><a href="collapsible.html"><i class="material-icons left">call</i>Contact Us</a></li>
+          </ul>
+        </div>
+    </div>
+      </nav>
+    <!-- End navbar -->
+    <!-- cart start -->
+    <div class="bg-image">
+    <div class="container cart-page">
+<table>
+<tr>
+<th>Product</th>
+<th>Quantity</th>
+<th>Subtotal</th>    
+</tr>
+
+<tr>
+<td>
+<div class="cart-info">
+<div>
+<h5>Nike Air Max</h5>
+<h6>Men's Shoe</h6>
+<h6>Price: ₹ 1500</h6>
+<a href="">Remove</a>
+</div>
+</td>
+<td>
+  <div class="box">
+    <div class="dec button">-</div>
+    <input type="text" name="qty" id="1" value="0" class="input-filed" style="width:28px;height: 28px;
+    padding: 5px 10px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 0 10px;">
+    <div class="inc button">+</div>
+    </div>
+</td>
+<td>₹ 1500</td>
+</tr>
+
+<tr>
+  <td>
+  <div class="cart-info">
+  <div>
+  <h5>Lakmé Lipstick</h5>
+  <h6>Matte</h6>
+  <h6>Price: ₹ 275</h6>
+  <a href="">Remove</a>
+  </div>
+  </td>
+  <td>
+    <div class="box">
+      <div class="dec button">-</div>
+      <input type="text" name="qty" id="2" value="0" class="input-filed" style="width:28px;height: 28px;
+      padding: 5px 10px;
+      border: 1px solid #c6c6c6;
+      border-radius: 5px;
+      font-size: 20px;
+      margin: 0 10px;">
+      <div class="inc button">+</div>
+      </div>
+  </td>
+  <td>₹ 275</td>
+  </tr>
+</table>
+
+<div class="total-price">
+  <table>
+  <tr>
+    <td>Subtotal</td>
+    <td>₹ 1775</td>
+    <td><button class="btn bg-primary">Check Out</button></td>
+  </tr>
+  </table>
+</div>
+    </div>
+  </div>
+<!-- cart end -->
+<script>
+  // increment
+var incrementButton = document.getElementsByClassName('inc');
+var decrementButton = document.getElementsByClassName('dec');
+
+for(var i=0;i< incrementButton.length; i++)
+{
+var button=incrementButton[i];
+
+button.addEventListener('click',function(event){
+
+  var buttonClicked=event.target;
+
+  var input = buttonClicked.parentElement.children[1];
+  var inputValue=input.value;
+  var newValue= parseInt(inputValue)+1;
+  if (newValue>=0) {
+    input.value=newValue;
+  }
+})
+}
+// Decrement
+for(var i=0;i< decrementButton.length; i++)
+{
+var button=decrementButton[i];
+
+button.addEventListener('click',function(event){
+
+  var buttonClicked=event.target;
+
+  var input = buttonClicked.parentElement.children[1];
+  var inputValue=input.value;
+  var newValue= parseInt(inputValue)-1;
+  if (newValue>=0) {
+    input.value=newValue;
+  }
+})
+}
+
+</script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

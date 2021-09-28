@@ -1,0 +1,30 @@
+.bg-primary{
+    background: linear-gradient(to left, rgb(67, 198, 172), rgb(25, 22, 84));
+}
+.my-icon{
+    font-size: 80px!important;
+    color:rgb(67, 198, 172);
+}
+.services-container{
+    border: 5px solid rgb(25, 22, 84);
+    padding: 25px;
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+}
+.services-container:hover{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+
+#lab_social_icon_footer {
+    padding: 40px 0;
+    /* background-color: #dedede; */
+    background-color: black;
+  }
+  
+  #lab_social_icon_footer a {
+    /* color: #333; */
+    color: white;
+  }
