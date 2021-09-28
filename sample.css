@@ -1,0 +1,39 @@
+.bg-primary{
+    background: linear-gradient(to left, rgb(67, 198, 172), rgb(25, 22, 84));
+}
+#product-div{
+    border: 5 px solid grey; 
+    padding: 2px; 
+  }
+  .product-item{
+      max-width: 300px;
+      max-height: 500px;
+      margin: auto;
+      margin-bottom: 5px;
+      margin-top: 3rem;
+  }
+#lab_social_icon_footer {
+    padding: 40px 0;
+    background-color: black;
+  }
+  #lab_social_icon_footer a {
+    color: white;
+  }
+  .my-icon{
+    font-size: 80px!important;
+    color:rgb(67, 198, 172);
+}
+.rating-star{
+ color: rgb(255, 184, 0);  
+}
+.services-container{
+    border: 5px solid rgb(25, 22, 84);
+    padding: 25px;
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+}
+.services-container:hover{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
